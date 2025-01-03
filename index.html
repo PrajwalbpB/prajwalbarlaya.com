@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="img/fotor_2023-5-26_17_19_0.png">
+    <link rel="icon" type="image/png" href="img/Screenshot 2025-01-03 075844-modified.png">
 </head>
 
 <div class="loader">
@@ -23,31 +23,185 @@
   
 </div>
 <body class="main-content">
-    <header class="container header active" id="home">
+    <div class="section-with-border">
+        
+      </div>
+    <!-- <header class="container header active" id="home">
         <div class="header-content">
             <div class="left-header">
                 <div class="h-shape"></div>
                 <div class="image">
-                    <img src="img/Myimage.png" alt="">
+                    <img src="img/Myimage.png" alt="Profile Image">
                 </div>
             </div>
             <div class="right-header">
                 <h1 class="name">
                     <div class="typetext">
-                        <p> Hi, I'm Prajwal B P Barlaya</p> 
-                        <p style="align-items: center;text-align: center;color:orange"> <span class="auto-type" style="color:orange"></span></p>
+                        <p>Hi, I'm Prajwal B P Barlaya</p>
+                        <p style="align-items: center; text-align: center; color: orange;">
+                            <span class="auto-type" style="color: orange"></span>
+                        </p>
+                    </div>
+                </h1>
+                <p style="align-items: left; text-align: left;">
+                    I am a Software Engineer at Accenture, passionate about building innovative and impactful solutions. I thrive in challenging environments and aim to deliver excellence in every project.
+                    <br>
+                    I am a self-taught and passionate Web Developer from India, specializing in creating seamless, user-friendly web applications. I love coding from scratch and bringing ideas to life in the browser. A confident individual, I thrive on learning, growing, and tackling challenging projects that drive innovation and personal growth.
+                </p>
+            </div>
+        </div>
+        <div class="photo-carousel">
+            <button class="arrow left-arrow" onclick="prevSlide()">&#10094;</button>
+            <div class="carousel-images">
+                <img src="img/IMG-20240717-WA0011.jpg" alt="Photo 1" class="carousel-img">
+                <img src="img/IMG-20241112-WA0032.jpg" alt="Photo 2" class="carousel-img">
+                <img src="img/IMG-20240913-WA0026.jpg" alt="Photo 3" class="carousel-img">
+            </div>
+            <button class="arrow right-arrow" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </header>
+    
+    <style>
+    /* Carousel container */
+    .photo-carousel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-top: 20px;
+    }
+    
+    /* Arrow buttons */
+    .arrow {
+        background: none;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        color: #333;
+    }
+    
+    .left-arrow {
+        left: 10px;
+    }
+    
+    .right-arrow {
+        right: 10px;
+    }
+    
+    /* Carousel images */
+    .carousel-images {
+        display: flex;
+        overflow: hidden;
+        width: 300px;
+        height: 300px;
+        position: relative;
+    }
+    
+    .carousel-img {
+        min-width: 100%;
+        transition: transform 0.5s ease-in-out; /* Ensure this property is applied */
+        border-radius: 10px;
+    }
+    
+    </style> -->
+    
+    <!-- <script>
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            const images = document.querySelectorAll(".carousel-img");
+            images.forEach((img, i) => {
+                img.style.transform = `translateX(${(i - index) * 100}%)`;
+            });
+        }
+        
+        function nextSlide() {
+            const images = document.querySelectorAll(".carousel-img");
+            currentIndex = (currentIndex + 1) % images.length;
+            showSlide(currentIndex);
+        }
+        
+        function prevSlide() {
+            const images = document.querySelectorAll(".carousel-img");
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            showSlide(currentIndex);
+        }
+        
+        // Initialize carousel
+        showSlide(currentIndex);
+        
+    </script>
+     -->
+   
+    <header class="container header active" id="home">
+        <div class="header-content">
+            <div class="left-header">
+                <div class="h-shape"></div>
+                <div class="image">
+                    <img src="img/IMG-20240525-WA0016-removebg - Copy (2) - Copy.png" alt="">
+                </div>
+            </div>
+            <div class="right-header">
+                <h1 class="name">
+                    <div class="typetext">
+                        <p> Hi! I'm <span style="color:white;"><strong>Prajwal Barlaya</strong></span></p> 
+                        <p style="align-items: center;text-align: center;color:#9d4603"> <span class="auto-type" style="color:#9d4603; "><strong></strong></span></p>
                 </div>
                 </h1>
-                <p style="align-items: left;text-align: left;">
-                    A Front-End Web Developer and enthusiastic engineering fresher who specializes in creating aesthetic web pages.
+                <p style="align-items: left;text-align: left; text-align: justify; ">
+                    I am a Software Engineer at <span style="color:#9d4603;"><strong>Accenture </strong></span>, passionate about building innovative solutions that make a real impact. <br>&nbsp;&nbsp;I thrive in challenging environments and always aim to deliver excellence in every project.
+
+
                     <br>
-                    &nbsp;&nbsp;&nbsp; I am a self-taught passionate Front-End developer from India. I Love to code things from scratch, and enjoy bringing ideas to life in the browser. I am a confident individual looking for challenging and interesting work that would help my growth .
-               
+                    &nbsp;&nbsp;A self-taught Web Developer from India, specializing in creating seamless, user-friendly web applications. I love coding from scratch and bringing ideas to life. Continuously learning, I strive for innovation and growth.
+
+
                 </p>
                 
             </div>
         </div>
-    </header>
+    </header> 
+    <div class="blogs" style="margin: 20px auto; padding: 15px; ">
+        <div class="blog" style="flex: 1;  height: 100%;">
+            <img src="img/IMG-20241112-WA0032.jpg" alt=""  style="width: 100%; height: auto; ">
+           
+        </div>
+            
+        <div class="blog" style="flex: 1;  height: 100%;">
+            <img src="img/IMG-20240909-WA0013.jpg" alt=""  style="width: 100%; height: auto; ">
+           
+        </div>
+        <div class="blog" style="flex: 1;  height: 100%;">
+            <img src="img/IMG-20250102-WA0009.jpg" alt=""  style="width: 100%; height: auto; ">
+           
+        </div>
+    </div>
+    <div>
+        <p>
+
+        </p><p>
+
+
+        </p><br>
+    </div>
+<!-- 
+    <div class="blogs" style="margin: 20px auto; padding: 15px; display: flex; flex-wrap: wrap; gap: 15px;">
+        <div class="blog" style="flex: 1; min-width: calc(33% - 15px); height: 100%;">
+            <img src="img/IMG-20250102-WA0009.jpg" alt="" style="width: 100%; height: auto; border-radius: 8px;">
+        </div>
+    
+        <div class="blog" style="flex: 1; min-width: calc(33% - 15px); height: 100%;">
+            <img src="img/IMG-20240913-WA0026.jpg" alt="" style="width: 100%; height: auto; border-radius: 8px;">
+        </div>
+    
+        <div class="blog" style="flex: 1; min-width: calc(33% - 15px); height: 100%;">
+            <img src="img/IMG-20241112-WA0032.jpg" alt="" style="width: 100%; height: auto; border-radius: 8px;">
+        </div>
+    </div> -->
     <main>
         <section class="container about" id="about">
             <div class="main-title">
@@ -57,14 +211,14 @@
             <div class="about-container">
                 <div class="left-about">
                     <h4>   <div id="hi">INFORMATION</div></h4>
-                    <p>
-                       A Web Development enthusiast who is capable of using his technical skills for the betterment of the organization.
-                       Fine practical knowledge and working experience with HTML5, CSS3 and Javascript basics. A good Competitive programmer in Java with knowledge of Data Structures. Currently expanding my knowledge with respect to MERN.
-                        <br /> <br /> A Hard-working web developer with a flair for creating elegant solutions in the least amount of time. 
+                    <p style="text-align:justify">
+                        Enthusiastic Developer and a passionate learner dedicated to creating dynamic web applications, with a passion for continuous learning and growth in web technologies.
+                        A problem-solver, eager to apply technical skills to deliver impactful solutions. Driven by continuous development, I strive to stay ahead in the ever-evolving web development world.
+                       <br /> <br />   As a team player, I value collaboration, hard work, and mutual understanding. Focused on delivering efficient, elegant solutions that meet user needs in the shortest time.
                       
                     </p>
                     <div class="btn-con">
-                  <a href="1RN20IS108_Prajwal B P Barlaya.pdf.pdf" class="main-btn">
+                  <a href="Prajwal B P Barlaya - 13851840.pdf" class="main-btn">
                             <span class="btn-text">Download CV</span>
                              <span class="btn-icon"><i class="fas fa-download"></i></span>
                         </a>
@@ -74,12 +228,12 @@
                     <div class="about-item">
                         <div class="abt-text">
                             <p class="large-text">07+</p>
-                            <p class="small-text">Projects <br /> Completed</p>
+                            <p class="small-text">Personal Projects <br /> Completed</p>
                         </div>
                     </div>
                     <div class="about-item">
                         <div class="abt-text">
-                            <p class="large-text">01</p>
+                            <p class="large-text">02</p>
                             <p class="small-text">Internships <br /> Done</p>
                         </div>
                     </div>
@@ -87,13 +241,13 @@
                     <div class="about-item">
                         <div class="abt-text">
                             <p class="large-text">02</p>
-                            <p class="small-text">Happy<br /> Clients</p>
+                            <p class="small-text">Happy Clients <br> <span style="font-size: 0.5rem;">(Pre-Corporate)</span></p>
                         </div>
                     </div>
                     <div class="about-item">
                         <div class="abt-text">
-                            <p class="large-text">Fresher</p>
-                            <p class="small-text">Years of <br /> Experience</p>
+                            <p class="large-text">01</p>
+                            <p class="small-text">Years of Experience in <br /> Corporate </p>
                         </div>
                     </div>
                 </div>
@@ -102,27 +256,28 @@
              
                 <h4 class="stat-title">   <div id="hi">My Skillsets</div></h4>
         <p style="align-items: center;text-align: center;">
-<img src="img/HTML5-LOGO.png" width="80px" style="align-items: center;">
-         <img src="img/CSS3 LOGO.png" style="color:grey;width:75px">
-         <img src="img/JS LOGO.png" width="75px">
-         <img src="img/images.jpeg" width="160px">
-       
+<img src="img/HTML5-LOGO.png" width="75px" style="align-items: center;">
+         <img src="img/CSS3 LOGO.png" style="color:grey;width:70px">
+         <img src="img/JS LOGO.png" width="70px">
+         <img src="img/images...jpeg" width="60px">
+         <img src="img/download (4)_transparent_Craiyon.png" width="100px">
+         <img src="img/download__5_-removebg-preview.png" width="100px">
         </p>
 <br>
         <div class="progress-bars">
             <div class="progress-bar">
                 <p class="prog-title">Problem Solving</p>
                 <div class="progress-con">
-                    <p class="prog-text">85%</p>
+                    <p class="prog-text">90%</p>
                     <div class="progress">
                         <span class="node"></span>
                     </div>
                 </div>
             </div>
             <div class="progress-bar">
-                <p class="prog-title">Data Structures</p>
+                <p class="prog-title">Communication and Presentation Skills</p>
                 <div class="progress-con">
-                    <p class="prog-text">65%</p>
+                    <p class="prog-text">95%</p>
                     <div class="progress">
                         <span class="python"></span>
                     </div>
@@ -135,7 +290,7 @@
             <div class="expi">
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="tl-icon" style="background-attachment: white;">
+                    <div class="tl-icon" style="background-attachment: #1F1F1F;">
                         
                             <img src="img/1599765170224-fotor-20230720224720.png" width="80%" >
                            
@@ -143,10 +298,38 @@
                     </div>
                     <p class="tl-duration">2023 Feb - 2023 June </p>
                     <h5>Internship<span> - (Education) E - ADDA</span></h5>
-                    <p>
+                    <p style="text-align:justify;">
                      Worked as Front-End Web Developer at E-ADDA where I built two static websites for two real time clients using HTML5, CSS3 and basic Javascript and got exposed to industrial environment working with real time clients . 
                     </p>
                 </div>
+                <div class="timeline-item">
+                    <div class="tl-icon" style="background-attachment: #1F1F1F;">
+                        
+                            <img src="img/cropped_image.png" width="80%" >
+                           
+                            
+                    </div>
+                    <p class="tl-duration">2023 Nov - 2024 Feb </p>
+                    <h5>Internship<span> - NullClass</span></h5>
+                    <p style="text-align:justify;">
+                        Worked as a Full Stack Web Developer, building a Stack Overflow clone with user authentication, Q&A features, and profile management. Integrated a programming chatbot and enhanced features using the MERN stack and JWT for secure authentication.
+                        </p>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="tl-icon" style="background-attachment: #1F1F1F;">
+                        
+                            <img src="img/Screenshot 2025-01-03 103715-modified.png" width="80%" >
+                           
+                            
+                    </div>
+                    <p class="tl-duration">2024 July - Present </p>
+                    <h5>Full Time<span> - Accenture</span></h5>
+                    <p style="text-align:justify;">
+                        Currently working as a Packaged App Development Associate and an Associate Software Engineer. Completed SAP S/4HANA Material Management training, focusing on Procurement and Inventory Management modules. <br>
+                       &nbsp; &nbsp; &nbsp; Gained hands-on experience with material master data, purchase orders, and inventory management workflows in SAP S/4HANA MM.  Exploring knowledge in SAP ABAP and AWS to enhance technical expertise and contribute to project development.  </p>
+                </div>
+
             </div>
         </div>
             <h4 class="stat-title"><div id="hi">My Education </div></h4>
@@ -159,8 +342,8 @@
                     <p class="tl-duration">2020 - 2024</p>
                     <h5>Engineering ( B.E )<span> - R.N.S.I.T </span></h5>
                     <p>
-                        Persuing Information Science Engineering at R.N.S Institute of Technology .<br>
-                        <br>  <p style="font-size: small;"> CGPA : 8.38</p>
+                        Graduated with a degree in Information Science Engineering from R.N.S Institute of Technology, Bangalore.<br>
+                        <br>  <p style="font-size: small;"> CGPA : 8.39</p>
                     </p>
                 </div>
                 <div class="timeline-item">
@@ -192,7 +375,7 @@
                     <p class="tl-duration">2007 - 2010</p>
                     <h5>Primary Education <span> - S.D.M.C</span></h5>
                     <p>
-                        Completed Nursery & Primary Education ( CBSE ) till 3rd standard from Shri Dharmasthala Manjunatheshwara English Medium School - Dakshina Kannada .<br>
+                        Completed Nursery & Primary Education (CBSE) till 3rd standard from Shri Dharmasthala Manjunatheshwara English Medium School - Dakshina Kannada .<br>
                    
                     </p>
                 </div>
@@ -229,13 +412,13 @@
                             </div>
                         </div>
                         <div class="blog">
-                            <img src="img/download (1).jpeg" alt="">
+                            <img src="img/IMG-20241210-WA0006.jpg" alt="">
                             <div class="blog-text">
                                 <h4>
-                                   Stamp , Coin & Note Collection
+                                   Driving and Riding
                                 </h4>
                                 <p>
-                                  I have a plenty books of collection of Stamps , Coins , Notes of India and other countries.
+                                    Passionate about driving, exploring new destinations, and enjoying long road trips. I love Car's.
                                 </p>
                             </div>
                         </div> 
@@ -244,7 +427,7 @@
 
                     <hr><br>
         
-                    <p style="align-items: center;text-align: center;color:lightgray;font-size: small;">© 2023. All rights reserved | Design by Prajwal-Barlaya</p>
+                    <p style="align-items: center;text-align: center;color:lightgray;font-size: small;">© 2025. All rights reserved | Design by Prajwal-Barlaya</p>
                 </div>
             
         </section>
@@ -364,7 +547,7 @@
 
                 <hr><br>
     
-                <p style="align-items: center;text-align: center;color:lightgray;font-size: small;">© 2023. All rights reserved | Design by Prajwal-Barlaya</p>
+                <p style="align-items: center;text-align: center;color:lightgray;font-size: small;">© 2025. All rights reserved | Design by Prajwal-Barlaya</p>
             </div>
            
         </section>
@@ -388,7 +571,7 @@
                             <div class="contact-item">
                                 <div class="icon">
                                     <i class="fas fa-map-marker-alt"></i>
-                                    <span>  LOCATION : Kengeri-Bangalore Karnataka India</span>
+                                    <span>  LOCATION : Seetarampalya, Whitefield, Bangalore, Karnataka, India</span>
                                 </div>
                                 
                             </div>
@@ -443,7 +626,7 @@
                                 
                               
                                     <a href="#" class="main-btn">
-                                        <button type="submit" id="btnn" style="background-color: orange;height: 30px;text-align: center;align-items: center;"><span class="btn-text" id="btn" style="align-items: center;text-align: center;">Send  <i class='fa fa-send' style="color:black"></i></span></button>
+                                        <button type="submit" id="btnn" style="background-color: #9d4603;height: 30px;text-align: center;align-items: center;"><span class="btn-text" id="btn" style="align-items: center;text-align: center;">Send  <i class='fa fa-send' style="color:black"></i></span></button>
                                    
                                           </a>
                                       
@@ -458,8 +641,12 @@
 
                  <hr><br>
      
-                 <p style="align-items: center;text-align: center;color:lightgray;font-size: small;">© 2023. All rights reserved | Design by Prajwal-Barlaya</p>
-             </div> </div> 
+                 <p style="align-items: center;text-align: center;color:lightgray;font-size: small;">Thank you for visiting my portfolio. I am eager to contribute my skills and grow in the dynamic field of software development. <br>Let’s connect and create impactful solutions together!</p><br>
+                 <hr><br>
+                 <p style="align-items: center;text-align: center;color:lightgray;font-size: small;">© 2025. All rights reserved | Design by Prajwal-Barlaya</p>
+             
+              
+                </div> </div> 
              </section>
  
       
@@ -482,7 +669,7 @@
     </div>
     <a href="index.html">
     <div class="theme-btn" style="align-items: center;">
-   <img src="img/fotor_2023-5-26_17_19_0.png" width="80%" >
+   <img src="img/Screenshot 2025-01-03 075844-modified.png" width="80%" >
        <!-- <img src="img/images.jpeg" width="80%"> -->
     </div></a>
     <script src="app.js"></script>
@@ -527,16 +714,16 @@
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 <script>
     var typed = new Typed(".auto-type",{
-        strings: ["&nbsp; &nbsp;&nbsp;","Competitive Coder &nbsp;", "Java Programmer &nbsp;","A Web Developer &nbsp;",],
+        strings: ["&nbsp; &nbsp;&nbsp;","A Software Engineer &nbsp;", "Enthusiastic Developer","Passionate Learner ...",],
         typeSpeed:100,
-        backSpeed:50
+        backSpeed:50,
+        loop: true
       
        
     })
 
 
-
-   
+  
 </script>
 
  
